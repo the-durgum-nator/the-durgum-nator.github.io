@@ -5,6 +5,20 @@ import Layout from "../layouts/Layout.astro";
 import astroLogo from "../assets/astro.svg";
 import background from "../assets/background.svg";
 const pageTitle = "About Me";
+const identity = {
+    name: "Rohan Durgum",
+    country: "United States",
+    occupation: "software engineer",
+    hobbies: ["gaming", "tinkering", "crochetting"],
+};
+const skills = [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "React",
+    "Astro",
+    "Being awesome!",
+];
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -13,14 +27,45 @@ const pageTitle = "About Me";
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <title>Astro</title>
+        <title>{pageTitle}</title>
+        <style>
+            h1 {
+                color: purple;
+                font-size: 4rem;
+            }
+            .skill {
+                color: blue;
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/blog">Blog</a>
-        <h1>About Me</h1>
+        <h1>{pageTitle}</h1>
         <h2>... and my new Astro site! :3</h2>
+
+        <p>
+            <li>
+                Hello! I'm {identity.name}, a upcoming {identity.occupation}.
+            </li>
+
+            <li>I live in {identity.country}, and it's alright over here.</li>
+
+            {
+                identity.hobbies.length >= 2 && (
+                    <li>
+                        Some of my hobbies are {identity.hobbies[0]} and{" "}
+                        {identity.hobbies[2]}.
+                    </li>
+                )
+            }
+            <p>My Skills are:</p>
+            <u1>
+                {skills.map((skill) => <li class="skill">{skill}</li>)}
+            </u1>
+        </p>
 
         <p>
             I'm working through the intro Astro website, second page in, first
