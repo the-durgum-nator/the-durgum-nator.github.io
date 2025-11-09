@@ -1,18 +1,8 @@
 ---
-import "../styles/global.css";
-import Layout from "../layouts/Layout.astro";
-import Navigation from "../components/Navigation.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Home Page";
 ---
 
-<Layout>
-	<body>
-		<Navigation />
-		<h3>Home Page</h3>
-		<p>
-			Here's the homepage of Rohan Durgum
-			<p>
-				temporarily put on Github Pages, eventually on server hosting!
-			</p>
-		</p>
-	</body>
-</Layout>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Don't forget to add stuff here!</h2>
+</BaseLayout>
