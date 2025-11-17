@@ -1,8 +1,19 @@
 ---
+import Menu from "../components/Menu.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Don't forget to add stuff here!</h2>
+  <Menu />
+  <!-- <h2>Don't forget to add stuff here!</h2> -->
+
+  <script>
+    const menu = document.querySelector(".menu");
+
+    menu?.addEventListener("click", () => {
+      const isExpanded = menu.getAttribute("aria-expanded") === "true";
+      menu.setAttribute("aria-expanded", `${!isExpanded}`);
+    });
+  </script>
 </BaseLayout>
