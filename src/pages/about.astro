@@ -24,21 +24,23 @@ const skills = [
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>... and my new Astro site!</h2>
+  <div class="main">
 
+    <h2>... and my new Astro site!</h2>
+    
   <p>
     <li>
       Hello! I'm {identity.name}, a upcoming {identity.occupation}.
     </li>
-
+    
     <li>I live in {identity.country}, and it's alright over here.</li>
-
+    
     {
       identity.hobbies.length >= 2 && (
         <li>
           Some of my hobbies are {identity.hobbies[0]} and {identity.hobbies[2]}
           .
-        </li>
+          </li>
       )
     }
     <p>My Skills are:</p>
@@ -46,7 +48,7 @@ const skills = [
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </u1>
   </p>
-
+  
   <p>
     I'm working through the intro Astro website, second page in, first written
     by myself!
@@ -54,7 +56,5 @@ const skills = [
 
   <p>Be on the lookout for more updates!</p>
 
-  <script>
-    import "../scripts/menu.js";
-  </script>
+  </div>
 </BaseLayout>

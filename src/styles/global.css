@@ -1,15 +1,21 @@
 html {
-    background-color: #FFFFFF;
+    background-color: #f0dec3;
     font-family: sans-serif;
 }
-
-
 body {
     margin: 0 auto;
-    width: 100%;
-    max-width: 80ch;
+    /* max-width: 105ch; */
     padding: 1rem;
-    line-height: 1.5;
+    /* line-height: 1.5; */
+    /* align-content: center; */
+    aspect-ratio: 16/9;
+}
+
+.main{
+    border-style: solid;
+    border-color: #598ce6;
+    max-width: 90%;
+    /* align-content: center; */
 }
 
 * {
@@ -23,64 +29,62 @@ h1 {
 
 /* Styling for nav links*/
 .nav-links {
-    width: 100%;
+    display:flex;   
     top: 5rem;
-    left: 48px;
-    background-color: #598ce6;
-    display: none;
-    margin: 0;
+    /* background-color: #e3a248; */
+    display: block;
+    position: static;
+    width: auto;
 }
 
-/* Styling for nav links*/
-.nav-links a {
-    display: block;
+/* Styling for nav links, the buttons themselves!*/
+.nav-links a{
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 20px;
+    border-style: solid;
+    border-color:#598ce6;
+    color: #3577e9;
 }
 
-.nav-links a:hover,
-
+.nav-links a:hover  {
+    background-color: #fb9677;
+}
 .nav-links a:focus {
-    background-color: #ff9776;
+    background-color: #e8896d;
 }
 
-.expanded {
-    display: unset;
+.nav-links img{
+    padding: 15px 20px;
+    width:40%;
+    height:40%;
 }
 
-@media screen and (min-width: 636px) {
-    .nav-links {
-        margin-left: 5em;
-        display: block;
-        position: static;
-        width: auto;
-        background: none;
-    }
+.maincolumns {
+    /* column-count: 2; */
+    display: flex;
 
-    .nav-links a {
-        display: inline-block;
-        padding: 15px 20px;
-    }
-
+    /* border-collapse:separate; */
+    /* text-indent: initial; */
+    /* box-sizing: border-box; */
+}
+.leftside{
+    width: 50%;
+    align-content: center;
+    height:80%;
+}
+.rightside{
+    width: 50%;
+    align-content: center;
+    height:80%;
 }
 
-.menu {
-  /* background-color: #0d0950; */
-  border: none;
-  color: #FFFFFF;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 5px 10px;
-}
-
-:has(.menu[aria-expanded="true"]) .nav-links {
-  display: unset;
-}
-
-  .menu {
-    display: none;
+.awesome{
+    align-content:center;
+    text-align: center;
 }

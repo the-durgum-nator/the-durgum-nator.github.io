@@ -1,19 +1,23 @@
 ---
-import Menu from "../components/Menu.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <Menu />
-  <!-- <h2>Don't forget to add stuff here!</h2> -->
+<div class="maincolumns">
+  <div class="leftside">
+    <p>We learn, we fail, we try again.</p>
+    <div class="awesome">
+      <p>Put something here</p>
+    </div>
+  </div>
+  <div class="rightside">
+    <p>We learn, we fail, we try again.</p>
+    <br>
+    <p> Another paragraph for checking spacing</p>
+  </div>
+</div>
 
-  <script>
-    const menu = document.querySelector(".menu");
 
-    menu?.addEventListener("click", () => {
-      const isExpanded = menu.getAttribute("aria-expanded") === "true";
-      menu.setAttribute("aria-expanded", `${!isExpanded}`);
-    });
-  </script>
+ 
 </BaseLayout>
