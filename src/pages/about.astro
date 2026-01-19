@@ -1,9 +1,5 @@
 ---
 import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
-import TabHeader from "../components/TabHeader.astro";
-import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About Me";
@@ -21,10 +17,10 @@ const skills = [
   "Astro",
   "Being awesome!",
 ];
+const show_Title=true
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <div class="main">
+<BaseLayout pageTitle={pageTitle} show_Title={show_Title}>
 
     <h2>... and my new Astro site!</h2>
     
@@ -56,5 +52,4 @@ const skills = [
 
   <p>Be on the lookout for more updates!</p>
 
-  </div>
 </BaseLayout>
