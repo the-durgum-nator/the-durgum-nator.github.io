@@ -16,12 +16,8 @@ const { pageTitle, show_Title } = Astro.props;
   </head>
   <body>
     <Header />
-    
-    <div class="main">
-
       {show_Title ? <h1>{pageTitle}</h1>:<h1></h1>}
       <slot />
-    </div>
     <Footer />
   </body>
 </html>

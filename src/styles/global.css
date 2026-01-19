@@ -11,7 +11,7 @@ body {
 
 .main{
     margin:auto;
-    /* max-width: %; */
+    max-width: 95%;
     min-width: 20%;
 }s
 
@@ -46,7 +46,6 @@ h1 {
     text-transform: uppercase;
     display: block;
     padding: 18px 22px;
-    /* border-style: solid; */
     color: #3577e9;
 
 }

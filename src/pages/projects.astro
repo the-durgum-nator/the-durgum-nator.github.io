@@ -9,14 +9,16 @@ const show_Title = true;
 ---
 
 <BaseLayout pageTitle={pageTitle} show_Title={show_Title}>
-  <p>Projects galore!</p>
-  <p>Not as plentiful as I like it right now, but in time that'll change.</p>
-  <p>Be on the lookout!</p>
-  <ul>
-    {
-      allPosts.map((post: any) => (
-        <BlogPost url={post.url} title={post.frontmatter.title} />
-      ))
-    }
+  <div class="main">
+    <p>Projects galore!</p>
+    <p>Not as plentiful as I like it right now, but in time that'll change.</p>
+    <p>Be on the lookout!</p>
+    <ul>
+      {
+        allPosts.map((post: any) => (
+          <BlogPost url={post.url} title={post.frontmatter.title} />
+        ))
+      }
   </ul>
+</div>
 </BaseLayout>

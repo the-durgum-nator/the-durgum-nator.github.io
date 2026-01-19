@@ -21,11 +21,11 @@ const show_Title=true
 ---
 
 <BaseLayout pageTitle={pageTitle} show_Title={show_Title}>
+  <div class="main">
 
-    <h2>... and my new Astro site!</h2>
-    
-  <p>
-    <li>
+    <h2>... and my new Astro site!</h2>    
+    <p>
+      <li>
       Hello! I'm {identity.name}, a upcoming {identity.occupation}.
     </li>
     
@@ -37,7 +37,7 @@ const show_Title=true
           Some of my hobbies are {identity.hobbies[0]} and {identity.hobbies[2]}
           .
           </li>
-      )
+        )
     }
     <p>My Skills are:</p>
     <u1>
@@ -49,7 +49,12 @@ const show_Title=true
     I'm working through the intro Astro website, second page in, first written
     by myself!
   </p>
-
+  
   <p>Be on the lookout for more updates!</p>
+<<<<<<< HEAD
 
+=======
+  
+  </div>
+>>>>>>> 6bdf48d (pre-emptive style changes, part 2 CLOSE TO MVP)
 </BaseLayout>
