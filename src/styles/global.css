@@ -1,5 +1,6 @@
+/* global styles! */
 html {
-    background-color: #f0dec3;
+    background-color: #c2b7a6;
     font-family: sans-serif;
 }
 
@@ -11,12 +12,12 @@ body {
 
 .main{
     margin:auto;
-    max-width: 95%;
+    /* max-width: %; */
     min-width: 20%;
-}s
-
-* {
-    box-sizing: border-box;
+    background-color:#e1ceb3;
+    border: 0.15em solid #913a41;
+    border-radius: 0.3em;   
+    padding: 1rem;
 }
 
 h1 {
@@ -24,46 +25,77 @@ h1 {
     font-size: 2.5rem;
 }
 
+li{
+    list-style-position: outside;
+    list-style-type:none;
+}
 
+
+ul li {
+    background-color:#e1ceb3;
+    margin: 10px;
+    border: 0.15em solid #913a41;
+    border-radius: 0.3em;   
+    padding: 20px;
+    display: block;
+    padding: 12px;
+    user-select: text;
+}
 
 /* Styling for nav links*/
 .nav-links {
-    margin:0;
-    position:relative;
     padding: 0; 
     display: flex;
+    align-content: center;
     background-color:#e1ceb3;
     border: 0.15em solid #913a41;
-    border-radius: 0.3em;
+    border-radius: 0.3em;   
 }
+
+.nav-links img{
+    object-fit: contain;
+    max-width: 10%;
+    max-height: 100%;
+    padding:0.5em;
+    width:42px;
+    height:42px;
+}
+
 
 /* Styling for nav links, the buttons themselves!*/
 .nav-links a{
     text-align: center;
     text-decoration: none;
-    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 18px;
     display: block;
-    padding: 18px 22px;
-    color: #3577e9;
+    color: #3168c8;
+    overflow:hidden;
 
 }
 
+/* dark for hover, darker when pressing. */
 .nav-links a:hover  {
     background-color: #fb9677;
 }
+
 .nav-links a:focus {
     color: #274c8d;
     background-color: #e8896d;
 }
 
+.nav-links a:active {
+    color: #274c8d;
+    background-color: #e8896d;
+}
 
+
+/* main divide page styling */
 .maincolumns {
     display: flex;
     margin: 5px;
     padding: auto;
-
 }
 .leftside{
     width: 50%;
@@ -83,20 +115,35 @@ h1 {
     border: 0.15em solid #913a41;
     border-radius: 0.3em;
     padding:10px;
-    margin: 10px;;
+    margin: 10px;
 }
 
-.awesome{
-    align-content:center;
-    text-align: center;
-}
 
+
+
+/* footer styling */
 .footer{
     width:40%;
     margin:auto;
     text-align: center;
+    align-content: center;
+    border: 0.15em solid #913a41;
+    border-radius: 0.3em;
+    display:flex;
+    background-color:#e1ceb3;
+    border: 0.15em solid #913a41;
 }
 
-.footer p{
-    align-content: center;
+
+.aboutme{
+    margin:auto;
+    /* text-align: center; */
+    /* align-content: center; */
+    border: 0.15em solid #913a41;
+    border-radius: 0.3em;
+    /* display:flex; */
+    min-height: 70%;
+    background-color:#e1ceb3;
+    border: 0.15em solid #913a41;
+    padding: 10px;
 }

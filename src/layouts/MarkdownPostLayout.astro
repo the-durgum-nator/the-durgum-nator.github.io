@@ -1,12 +1,14 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
+import BasePageLayout from "./BasePageLayout.astro";
+import "../styles/global.css"
 const { frontmatter } = Astro.props;
 ---
 
-<BaseLayout pageTitle={frontmatter.title}>
+<BasePageLayout pageTitle={frontmatter.title} showTitle={false}>
   <meta charset="utf-8" />
-  <p>{frontmatter.pubDate.toString().slice(0, 10)}</p>
-  <p><em>{frontmatter.description}</em></p>
-  <!-- <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> -->
-  <slot />
-</BaseLayout>
+  <div class="main">
+    <h3>{frontmatter.title}</h3>
+    <slot />
+
+  </div>
+</BasePageLayout>

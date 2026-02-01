@@ -1,23 +1,23 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BasePageLayout from "../layouts/BasePageLayout.astro";
 const pageTitle = "Home Page";
 const show_Title = false;
 ---
 
-<BaseLayout pageTitle={pageTitle} show_Title={show_Title}>
+<BasePageLayout pageTitle={pageTitle} show_Title={show_Title}>
 <div class="maincolumns">
   <div class="leftside">
     <p> A wise man once told me:</p>
-    <p>You never really lose until you give up at something</p>
+    <p>"You never really lose at something until you give up at it"</p>
     <p>Might as well put some time towards that motto.</p>
+    <br>  <!--trying out spacing here dw -->
+
+
   </div>
   <div class="rightside">
-    <p>We learn, we fail, we try again.</p>
+    <p>Welcome to the homepage of Rohan Durgum's website!</p>
     <br>
-    <p> Another paragraph for checking spacing</p>
+    <p> Here's some filler content at the moment, be on the lookout for more upcoming!</p>
   </div>
 </div>
-
-
- 
-</BaseLayout>
+</BasePageLayout>

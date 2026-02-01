@@ -1,14 +1,16 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BasePageLayout from "../layouts/BasePageLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
+import "/src/styles/global.css";
 const allPosts = Object.values(
   import.meta.glob("../pages/projects/*.md", { eager: true })
 );
 const pageTitle = "Projects";
-const show_Title = true;
+const show_Title = false;
 ---
 
-<BaseLayout pageTitle={pageTitle} show_Title={show_Title}>
+<BasePageLayout pageTitle={pageTitle} show_Title={show_Title}>
+  <h2>{pageTitle}</h2>
   <div class="main">
     <p>Projects galore!</p>
     <p>Not as plentiful as I like it right now, but in time that'll change.</p>
@@ -19,6 +21,6 @@ const show_Title = true;
           <BlogPost url={post.url} title={post.frontmatter.title} />
         ))
       }
-  </ul>
+    </ul>
 </div>
-</BaseLayout>
+</BasePageLayout>

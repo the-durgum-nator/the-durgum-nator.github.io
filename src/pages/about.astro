@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
-import BaseLayout from "../layouts/BaseLayout.astro";
-
+import BasePageLayout from "../layouts/BasePageLayout.astro";
 const pageTitle = "About Me";
 const identity = {
   name: "Rohan Durgum",
@@ -17,19 +16,36 @@ const skills = [
   "Astro",
   "Being awesome!",
 ];
-const show_Title=true
+const show_Title=false
 ---
 
-<BaseLayout pageTitle={pageTitle} show_Title={show_Title}>
+<BasePageLayout pageTitle={pageTitle} show_Title={show_Title}>
+  <h2>About Me</h2>    
   <div class="main">
 
-    <h2>... and my new Astro site!</h2>    
+
+      
+      <p>
+        When young me went to the doctor, my mom told me:
+      </p>
+      <p> 
+        "You should learn to make and design stuff like those tools the doctor uses!"
+      </p>
+      
+    <p>
+      Well, nearly a decade and a half later and still interested in all things tech. AI, Robotics, anything.
+      <br>
+      I can comfortably say, hardware or software; give me some time and I can hold to that thought my momma had.
+    </p>
+
+    
+<!--     
     <p>
       <li>
-      Hello! I'm {identity.name}, a upcoming {identity.occupation}.
-    </li>
+      Hello! I'm Rohan, an upcoming software engineer.
+      </li>
     
-    <li>I live in {identity.country}, and it's alright over here.</li>
+    <p>Born and raised in the US, and I'm the best at being .</p>
     
     {
       identity.hobbies.length >= 2 && (
@@ -51,10 +67,6 @@ const show_Title=true
   </p>
   
   <p>Be on the lookout for more updates!</p>
-<<<<<<< HEAD
-
-=======
-  
+   -->
   </div>
->>>>>>> 6bdf48d (pre-emptive style changes, part 2 CLOSE TO MVP)
-</BaseLayout>
+</BasePageLayout>
