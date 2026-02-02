@@ -2,7 +2,7 @@
 import BasePageLayout from "../layouts/BasePageLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
 import "/src/styles/global.css";
-const allPosts = Object.values(
+const allPosts = Object.entries(
   import.meta.glob("../pages/posts/*.md", { eager: true })
 );
 const pageTitle = "Personal Blog";
@@ -15,9 +15,11 @@ const show_Title = false;
     <p>Here's a personal blog for myself, check it out!</p>
     <ul>
       {
-        allPosts.map((post: any) => (
-          <BlogPost url={post.url} title={post.frontmatter.title} />
-        ))
+        allPosts.map(([path, post]:any) => {
+          // const fileName = path.split("/").pop().replace(".md", "");
+          return <BlogPost url={post.url} title={post.frontmatter.title}/>
+          // add descriptions + styling for each box
+        })
       }
     </ul>
 </div>

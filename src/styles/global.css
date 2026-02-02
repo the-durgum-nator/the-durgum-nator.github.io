@@ -1,6 +1,7 @@
 /* global styles! */
 html {
-    background-color: #c2b7a6;
+    /* background-color: #b8ab97; */
+    background-color: #ccc6b2;
     font-family: sans-serif;
 }
 
@@ -10,36 +11,60 @@ body {
     aspect-ratio: 16/9;
 }
 
+/* The main div, for website lay*/
 .main{
     margin:auto;
-    /* max-width: %; */
     min-width: 20%;
     background-color:#e1ceb3;
     border: 0.15em solid #913a41;
     border-radius: 0.3em;   
     padding: 1rem;
 }
-
-h1 {
-    margin: 1rem 0;
-    font-size: 2.5rem;
-}
-
-li{
+/* This to help remove the "numbers" for posts */
+.main ul li{
     list-style-position: outside;
     list-style-type:none;
 }
 
+h1 {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
 
-ul li {
+h2{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    background-color:#e1ceb3;
+    border: 0.15em solid #913a41;
+    border-radius: 0.3em;    
+    padding: 20px;
+    width:fit-content;
+}
+
+
+/* Div to make the post lists look nice*/
+.post {
     background-color:#e1ceb3;
     margin: 10px;
     border: 0.15em solid #913a41;
     border-radius: 0.3em;   
-    padding: 20px;
+    width:fit-content;
     display: block;
     padding: 12px;
-    user-select: text;
+    color:#3168c8;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 700;
+}
+/* Div for posts and their content*/
+.content{
+    margin:auto;
+    min-width: 20%;
+    background-color:#e1ceb3;
+    border: 0.15em solid #913a41;
+    border-radius: 0.3em;   
+    padding: 1rem;
 }
 
 /* Styling for nav links*/
@@ -50,8 +75,8 @@ ul li {
     background-color:#e1ceb3;
     border: 0.15em solid #913a41;
     border-radius: 0.3em;   
+    gap: 0.25rem; 
 }
-
 .nav-links img{
     object-fit: contain;
     max-width: 10%;
@@ -68,16 +93,18 @@ ul li {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 18px;
+    padding: 1rem 0.75rem;
     display: block;
     color: #3168c8;
     overflow:hidden;
-
+    /* border: 0.1rem solid #913a41; */
 }
 
 /* dark for hover, darker when pressing. */
 .nav-links a:hover  {
+    color: #274c8d;
     background-color: #fb9677;
+    
 }
 
 .nav-links a:focus {
@@ -86,21 +113,21 @@ ul li {
 }
 
 .nav-links a:active {
-    color: #274c8d;
+    color: #17305d;
     background-color: #e8896d;
 }
 
 
-/* main divide page styling */
+/* home divide page styling */
 .maincolumns {
     display: flex;
     margin: 5px;
     padding: auto;
 }
 .leftside{
-    width: 50%;
-    align-content: center;
-    height:80%;
+    width: 60%;
+    height:100%;
+    min-height: 80%;
     background-color:#e1ceb3;
     border: 0.15em solid #913a41;
     border-radius: 0.3em;
@@ -108,13 +135,12 @@ ul li {
     margin: 10px;;
 }
 .rightside{
-    width: 50%;
-    align-content: center;
+    width: 40%;
     height:80%;
     background-color:#e1ceb3;
     border: 0.15em solid #913a41;
     border-radius: 0.3em;
-    padding:10px;
+    padding:10px;   
     margin: 10px;
 }
 
@@ -137,11 +163,8 @@ ul li {
 
 .aboutme{
     margin:auto;
-    /* text-align: center; */
-    /* align-content: center; */
     border: 0.15em solid #913a41;
     border-radius: 0.3em;
-    /* display:flex; */
     min-height: 70%;
     background-color:#e1ceb3;
     border: 0.15em solid #913a41;

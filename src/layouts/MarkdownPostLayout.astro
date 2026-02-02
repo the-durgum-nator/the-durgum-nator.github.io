@@ -2,13 +2,16 @@
 import BasePageLayout from "./BasePageLayout.astro";
 import "../styles/global.css"
 const { frontmatter } = Astro.props;
+
+//to do later: seperate project/blog layouts with optional pictures/videos/links, etc.
 ---
 
 <BasePageLayout pageTitle={frontmatter.title} showTitle={false}>
   <meta charset="utf-8" />
-  <div class="main">
-    <h3>{frontmatter.title}</h3>
+  <h2>{frontmatter.title}</h2>
+  <div class="content">
     <slot />
 
   </div>
 </BasePageLayout>
+

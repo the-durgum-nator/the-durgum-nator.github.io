@@ -1,9 +1,12 @@
 ---
 // Basic navigation element for reuse
+import { Image } from 'astro:assets';
+import myImage from '../assets/Logo.png'; // Image is 1600x900
 ---
 
 <div class="nav-links">
-    <img src="/src/assets/Logo.png" alt="Logo" loading="lazy">
+    <!-- swapped out to image component since it's way faster somehow than raw HTML -->
+    <Image src={myImage}alt="logo"/>
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/blog">Blog</a>

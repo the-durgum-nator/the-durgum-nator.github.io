@@ -2,22 +2,49 @@
 import BasePageLayout from "../layouts/BasePageLayout.astro";
 const pageTitle = "Home Page";
 const show_Title = false;
+const username = "the-durgum-nator";
+const platform = "github";
 ---
 
 <BasePageLayout pageTitle={pageTitle} show_Title={show_Title}>
 <div class="maincolumns">
+
   <div class="leftside">
-    <p> A wise man once told me:</p>
-    <p>"You never really lose at something until you give up at it"</p>
-    <p>Might as well put some time towards that motto.</p>
-    <br>  <!--trying out spacing here dw -->
+    <p> 
+      A really wise man once told me:
+      <h4>"You never really lose at something until you give up at it."</h4>
+      Might as well put some time towards that motto.
+    </p>
 
+    <br>
 
+    <p>
+      Homepage of Rohan Durgum's website!
+      <br>Made like it was written on paper.
+      <br> That's how you know effort was put into it.
+    </p>
   </div>
   <div class="rightside">
-    <p>Welcome to the homepage of Rohan Durgum's website!</p>
-    <br>
-    <p> Here's some filler content at the moment, be on the lookout for more upcoming!</p>
-  </div>
+     <table>
+  <tr>
+    <th>
+      Here's where you can contact me:
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Github:
+      <a href={`https://www.${platform}.com/${username}`}> the-durgum-nator </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      LinkedIn:
+      <a href={`https://www.linkedin.com/in/rohan-durgum-7b923b282`}>rohan-durgum</a>
+    </td>
+  </tr>
+    
+  </table> 
+</div>
 </div>
 </BasePageLayout>
