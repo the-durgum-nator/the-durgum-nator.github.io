@@ -52,12 +52,10 @@ But a website is made, and idk how long I'll hold onto this.<br>
 I've got a few things to tag on over time, and maybe I'll make a response,<br>
 For now, keep on the watch, avid reader!<br>
 
-I have a few references to list out for where I got inspiration, so check these folk out:
+I have a few references to list out for where I got inspiration, so check these folk out before you leave:
 
 - <a href="https://hoff.industries/">Hoff Industries, or mainly a yt-ber I look up to. Check his YT out!</a>
 
 - <a href="https://cjthex.com/what-is-to-be-done/">An article that helped motivate me into this website and its styling.</a>
 
 - <a href="https://www.htmlhobbyist.com/">A neat website where I saw a bunch of concepts revisted well for me relearning web-dev</a>
-
-- <a>
