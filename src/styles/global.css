@@ -8,23 +8,20 @@ html {
 body {
     margin: auto;
     padding: 1rem;
-    aspect-ratio: 16/9;
 }
 
 /* The main div, for website lay*/
 .main{
+    max-width: 80vw;
     margin:auto;
     min-width: 20%;
-    background-color:#e1ceb3;
-    border: 0.15em solid #913a41;
+    background-color: #ccc6b2;
     border-radius: 0.3em;   
     padding: 1rem;
 }
-/* This to help remove the "numbers" for posts */
-.main ul li{
-    list-style-position: outside;
-    list-style-type:none;
-}
+
+
+
 
 h1 {
     margin: 1rem 0;
@@ -60,6 +57,7 @@ h2{
 /* Div for posts and their content*/
 .content{
     margin:auto;
+    max-width: 80vw;
     min-width: 20%;
     background-color:#e1ceb3;
     border: 0.15em solid #913a41;
@@ -68,6 +66,32 @@ h2{
     font-size: medium;
 }
 
+
+/* This to help remove the "numbers" for posts */
+.content ul li{
+    list-style-position: outside;
+    list-style-type:none;
+}
+
+
+/* legit wizardry I found on stack overflow */
+.content p img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.content p:has(img) img {
+  align-content: center;
+  margin: auto;
+  display: block;
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+}
 
 
 /* Styling for nav links*/
@@ -170,3 +194,14 @@ h2{
     border: 0.15em solid #913a41;
     padding: 10px;
 }
+
+
+
+
+
+@font-face {
+    src: url('/fonts/DepartureMono-Regular.woff') format('woff');
+    font-family: "DepartureMono";
+}
+
+

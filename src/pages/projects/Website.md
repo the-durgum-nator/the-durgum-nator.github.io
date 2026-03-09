@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Website Project Post"
-pubDate: 2026-2-1
+pubDate: 02/01/2026
 description: "Creating a Astro Blog of my own."
 author: "Rohan Durgum"
 tags: ["astro", "blogging", "web-dev"]
@@ -54,4 +54,4 @@ I have a few references to list out for where I got inspiration, so check these 
 
 - <a href="https://www.htmlhobbyist.com/">A neat website where I saw a bunch of concepts revisted well for me relearning web-dev</a>
 
-- <a href="https://www.makingsoftware.com/"> A beautifully crafted website which I'm still experimenting with the font with! Departure Mono really slaps! 
+- [A beautifully crafted website which I'm still experimenting with the font with! Departure Mono really slaps!](https://www.makingsoftware.com/)

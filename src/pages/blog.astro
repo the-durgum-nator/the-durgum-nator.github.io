@@ -6,18 +6,16 @@ const allPosts = Object.entries(
   import.meta.glob("../pages/posts/*.md", { eager: true })
 );
 const pageTitle = "Personal Blog";
-const show_Title = false;
 ---
 
-<BasePageLayout pageTitle={pageTitle} show_Title={show_Title}>
+<BasePageLayout pageTitle={pageTitle}>
   <h2>{pageTitle}</h2>
-  <div class="main">
+  <div class="content">
     <p>Here's a personal blog for myself, check it out!</p>
     <ul>
       {
         allPosts.map(([path, post]:any) => {
-          // const fileName = path.split("/").pop().replace(".md", "");
-          return <BlogPost url={post.url} title={post.frontmatter.title}/>
+          return <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate}/>
           // add descriptions + styling for each box
         })
       }
