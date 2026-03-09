@@ -14,12 +14,12 @@ const { pageTitle, show_Title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
+
   <body>
     <Header />
       {show_Title ? <h1>{pageTitle}</h1>:<h1></h1>}
       <slot />
       
-    <!-- <Footer /> -->
   </body>
 </html>
 

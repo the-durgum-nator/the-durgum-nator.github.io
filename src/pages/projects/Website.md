@@ -19,13 +19,9 @@ So, as ritual for most (if not all lol) software engineers, I decided to make a 
 
 I chose to keep it mostly simple at the current moment, and I went for a distinctly "human-made" theming.
 <br>
-Warm colors, avoiding gradient styling, and kept a paper-like style.
-<br>
-Both in light of revisiting my concepts of web-dev from college, while also not immediately vibecoding through all of it, in light of "relishing the difficulty of learning." 
-
 Not exactly anti-AI but... check out [a recent post](../posts/aianditseffects.md) if you're interested in my take on AI.
-<br>
 
+That means: warm colors, avoiding gradient styling, and kept a paper-like style.<br>
 And for portfolios and static sites in general, it's are quite simple, since it's just HTML, CSS, and JavaScript and/or Typescript 
 <br>(I kept to the former since there wasn't much when I wrote it).<br>
 
@@ -34,10 +30,8 @@ Three reasons why:
 
 - Astro focuses on "HTML first, JS later" design, which I find with experience from React much simpler.
 (that and <a href="https://docs.astro.build/en/concepts/why-astro/">a bunch of other concepts which I agree with</a>)
-- Astro also provides "islands", which will help definitely later if I decide to add more complex stuff, like animations, visualizations, etc.
+- Astro also provides "islands", which will help definitely later if I decide to add more complex stuff, like animations and visualizations. (React, Tailwind CSS, etc.)
 - As of recently, <a href="https://blog.cloudflare.com/astro-joins-cloudflare/">Cloudflare</a> is supporting Astro directly and officially
-  - So, potentially longterm support and general stability is insured. 
-  - And y'know, having a giant internet provider support a web framework should mean a good nudge towards that "tribe" of framework users? 
 
 There's a lot to love and dislike. I'm still working on it, and I'll update the page when it *is* past "MVP" stage.
 
@@ -59,3 +53,5 @@ I have a few references to list out for where I got inspiration, so check these 
 - <a href="https://cjthex.com/what-is-to-be-done/">An article that helped motivate me into this website and its styling.</a>
 
 - <a href="https://www.htmlhobbyist.com/">A neat website where I saw a bunch of concepts revisted well for me relearning web-dev</a>
+
+- <a href="https://www.makingsoftware.com/"> A beautifully crafted website which I'm still experimenting with the font with! Departure Mono really slaps! 

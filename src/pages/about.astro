@@ -2,10 +2,10 @@
 import "../styles/global.css";
 import BasePageLayout from "../layouts/BasePageLayout.astro";
 const pageTitle = "About Me";
-const show_Title=false
+
 ---
 
-<BasePageLayout pageTitle={pageTitle} show_Title={show_Title}>
+<BasePageLayout pageTitle={pageTitle}>
   <h2>About Me</h2>    
   <div class="main">
       <p>
@@ -23,36 +23,9 @@ const show_Title=false
     </p>
 
     I don't know what the future holds, but I'm willing to see it with you, reader.
+    <br>
     Still need to add more, so be on the lookout.
     
-<!--     
-    <p>
-      <li>
-      Hello! I'm Rohan, an upcoming software engineer.
-      </li>
     
-    <p>Born and raised in the US, and I'm the best at being .</p>
-    
-    {
-      identity.hobbies.length >= 2 && (
-        <li>
-          Some of my hobbies are {identity.hobbies[0]} and {identity.hobbies[2]}
-          .
-          </li>
-        )
-    }
-    <p>My Skills are:</p>
-    <u1>
-      {skills.map((skill) => <li class="skill">{skill}</li>)}
-    </u1>
-  </p>
-  
-  <p>
-    I'm working through the intro Astro website, second page in, first written
-    by myself!
-  </p>
-  
-  <p>Be on the lookout for more updates!</p>
-   -->
   </div>
 </BasePageLayout>

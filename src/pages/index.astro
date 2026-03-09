@@ -1,50 +1,61 @@
 ---
 import BasePageLayout from "../layouts/BasePageLayout.astro";
 const pageTitle = "Home Page";
-const show_Title = false;
 const username = "the-durgum-nator";
 const platform = "github";
 ---
 
-<BasePageLayout pageTitle={pageTitle} show_Title={show_Title}>
+<BasePageLayout pageTitle={pageTitle} >
 <div class="maincolumns">
 
   <div class="leftside">
     <p> 
-      A really wise man once told me:
-      <h4>"You never really lose at something until you give up at it."</h4>
-      Might as well put some time towards that motto.
+      You know, a really wise man once told me:<br>
+      <em>"You never really lose at something until you give up at it."</em>
+      <br>Might as well put some time towards that motto.
     </p>
 
-    <br>
 
     <p>
       Homepage of Rohan Durgum's website!
-      <br>Made like it was written on paper.
+      <br> Made like it was written on paper.
       <br> That's how you know effort was put into it.
+      <br> Minus the text, unless you use a typewriter.
     </p>
   </div>
-  <div class="rightside">
-     <table>
-  <tr>
-    <th>
-      Here's where you can contact me:
-    </th>
-  </tr>
-  <tr>
-    <td>
-      Github:
-      <a href={`https://www.${platform}.com/${username}`}> the-durgum-nator </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      LinkedIn:
-      <a href={`https://www.linkedin.com/in/rohan-durgum-7b923b282`}>rohan-durgum</a>
-    </td>
-  </tr>
-    
-  </table> 
+  
+  <div class ="rightside">
+    <div class="rightsidetop">
+  
+  </div>
+
+  <div class="rightsidebottom">
+      <table>
+    <tr>
+      <th>
+        Here's where you can contact me:
+      </th>
+    </tr>
+    <tr>
+      <td>
+        Github:
+        <a href={`https://www.${platform}.com/${username}`}> the-durgum-nator </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        LinkedIn:
+        <a href={`https://www.linkedin.com/in/rohan-durgum-7b923b282`}>rohan-durgum</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        E-mail:
+        <a href={`mailto:durgum.rohan@gmail.com`}>durgum.rohan@gmail.com</a>
+      </td>
+    </tr>
+    </table> 
+  </div>
 </div>
-</div>
+
 </BasePageLayout>

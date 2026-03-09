@@ -8,10 +8,9 @@ const { frontmatter } = Astro.props;
 
 <BasePageLayout pageTitle={frontmatter.title} showTitle={false}>
   <meta charset="utf-8" />
-  <h2>{frontmatter.title}</h2>
+    <h2 class ="content-title-child">{frontmatter.title}</h2>
   <div class="content">
     <slot />
-
   </div>
 </BasePageLayout>
 
