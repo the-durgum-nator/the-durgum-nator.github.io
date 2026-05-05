@@ -1,8 +1,8 @@
 /* global styles! */
 html {
-    /* background-color: #b8ab97; */
     background-color: #ccc6b2;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: "DepartureMono";
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif */
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 
 /* The main div, for website lay*/
 .main{
-    max-width: 80vw;
+    max-width: 90vw;
     margin:auto;
     min-width: 20%;
     background-color: #ccc6b2;
@@ -54,6 +54,18 @@ h2{
     font-style: normal;
     font-weight: 700;
 }
+.post:hover{
+    background-color:#d3c1a7;
+}
+
+.post:focus{
+    background-color:#b6a791;
+}
+.post:active{
+    background-color:#a69681;
+}
+
+
 /* Div for posts and their content*/
 .content{
     margin:auto;
@@ -196,12 +208,10 @@ h2{
 }
 
 
-
-
-
 @font-face {
-    src: url('/fonts/DepartureMono-Regular.woff') format('woff');
     font-family: "DepartureMono";
+    src: url('/fonts/DepartureMono-Regular.woff2') format('woff2');
+    src: url('/fonts/DepartureMono-Regular.woff') format('woff');
 }
 
 
