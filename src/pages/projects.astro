@@ -1,26 +1,9 @@
 ---
-import BasePageLayout from "../layouts/BasePageLayout.astro";
-import BlogPost from "../components/BlogPost.astro";
-import "/src/styles/global.css";
-const allPosts = Object.entries(
-  import.meta.glob("../pages/projects/*.md", { eager: true })
-);
-const pageTitle = "Projects";
----
+import PostListLayout from "../layouts/PostListLayout.astro";
 
-<BasePageLayout pageTitle={pageTitle}>
-  <h2>{pageTitle}</h2>
-  <div class="content">
-    <p>Projects galore!
-    Not as plentiful as I like it right now, but in time that'll change.
-    Be on the lookout!</p>
-    <ul>
-      {
-        allPosts.map(([path, post]:any) => {
-          return <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate}/>
-          // add descriptions + styling for each box
-        })
-      }
-    </ul>
-</div>
-</BasePageLayout>
+const pageTitle = "Projects";
+const glob = import.meta.glob("../pages/projects/*.md", { eager: true });
+---
+<PostListLayout pageTitle={pageTitle} glob={glob}>
+  <p>Here's a personal blog for myself, check it out!</p>
+</PostListLayout>

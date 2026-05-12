@@ -1,0 +1,25 @@
+---
+import BasePageLayout from "./BasePageLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+import "/src/styles/global.css";
+
+const { pageTitle, glob } = Astro.props;
+
+const allPosts = Object.entries(glob)
+  .sort(([, a]: any, [, b]: any) =>
+    +new Date(b.frontmatter.pubDate) - +new Date(a.frontmatter.pubDate)
+  );
+---
+<BasePageLayout pageTitle={pageTitle}>
+  <h2>{pageTitle}</h2>
+  <div class="content">
+    <slot />
+    <ul>
+      {
+        allPosts.map(([path, post]: any) => (
+          <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate} />
+        ))
+      }
+    </ul>
+  </div>
+</BasePageLayout>
