@@ -39,4 +39,14 @@ And I felt hollow. Here I am, withering my own life away on some grind towards a
 Right now the world is hectic, and really out of normalcy. It's easy to forget that, and easy to forget it will get tougher.
 But I think going back and getting some of that patience when we were young might help us in the long-haul.
 
-<!-- ![](/assets/india/bruni.jpg)*bruni!* -->
+![](/assets/india/bruni.jpg)
+*bruni!*
+
+![](/assets/india/2288.jpg)
+*The climb to Venkateswara's temple*
+
+![](/assets/india/theview.jpg)
+*Halfway up the mountain*
+
+![](/assets/india/murlimama.jpg)
+*Where I stayed for majority of the trip*

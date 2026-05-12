@@ -12,16 +12,18 @@ body {
 
 /* The main div, for website lay*/
 .main{
-    max-width: 90vw;
+    max-width: 85vw;
     margin:auto;
     min-width: 20%;
     background-color: #ccc6b2;
     border-radius: 0.3em;   
     padding: 1rem;
+
+    /* preventing overflow in any main div */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow: hidden;
 }
-
-
-
 
 h1 {
     margin: 1rem 0;
@@ -94,6 +96,7 @@ h2{
   color: #888;
   font-style: italic;
   margin-top: 0.5rem;
+
 }
 
 .content p:has(img) img {
@@ -103,6 +106,8 @@ h2{
   max-width: 50%;
   height: auto;
   object-fit: contain;
+  border: 0.15em solid #913a41;
+  border-radius: 0.3em;
 }
 
 
@@ -159,23 +164,47 @@ h2{
 
 /* home divide page styling */
 .maincolumns {
-    display: flex;
-    margin: 5px;
-    padding: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+    margin: 5px;    
 }
-.leftside{
-    width: 60%;
-    height:1 00%;
-    min-height: 80%;
+
+.maincolumns img {
+    display:block;
+    margin:auto;
+    max-width: 75%;
+    max-height: 75%;
+    border: 0.15em solid #6e2d32;
+    border-radius: 0.3em;
+}
+
+/* .leftside{ 
+}*/
+.leftsidetop{
     background-color:#e1ceb3;
     border: 0.15em solid #913a41;
     border-radius: 0.3em;
-    padding:10px;
-    margin: 10px;;
+    padding:20px;
+    margin: 10px;
 }
-.rightside{
-    width: 40%;
-    height:80%;
+.leftsidebottom{
+    background-color:#e1ceb3;
+    border: 0.15em solid #913a41;
+    border-radius: 0.3em;
+    padding:20px;
+    margin: 10px;
+}
+
+/* keeping for organization/later use
+.rightside {
+}
+.rightsidetop{
+    
+}   
+*/
+.rightsidebottom{
+    max-height:40%;
     background-color:#e1ceb3;
     border: 0.15em solid #913a41;
     border-radius: 0.3em;
@@ -183,20 +212,13 @@ h2{
     margin: 10px;
 }
 
-/* footer styling */
-.footer{
-    width:40%;
-    margin:auto;
-    text-align: center;
-    align-content: center;
-    border: 0.15em solid #913a41;
-    border-radius: 0.3em;
-    display:flex;
-    background-color:#e1ceb3;
-    border: 0.15em solid #913a41;
+@media (max-width: 768px) {
+  .maincolumns {
+    grid-template-columns: 1fr;
+  }
 }
 
-
+/*
 .aboutme{
     margin:auto;
     border: 0.15em solid #913a41;
@@ -206,6 +228,7 @@ h2{
     border: 0.15em solid #913a41;
     padding: 10px;
 }
+*/
 
 
 @font-face {
